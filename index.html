@@ -20,7 +20,7 @@
 				<svg role="img" height="16" width="16" class="Svg-sc-1bi12j5-0 gSLhUO _kBqVtNa6io1mPbycO8V" viewBox="0 0 16 16"><path d="M3 6l5 5.794L13 6z"></path></svg>
 			</div>
 		</div>
-	<div class="container horizontal">
+	<div class="container horizontal2">
 			<div class="card shadow">
 				<div class="image-container">
 					<img src="https://media.vogue.co.uk/photos/60e83450e1390ff25b681474/2:3/w_2240,c_limit/image001.jpg">
@@ -29,13 +29,15 @@
 						<span>&#9658;</span>
 					</div>
 				</div>
-
+    	<div class="container horizontal2">
 				<h4>Venom</h4>
-
+    	</div>
+          	<div class="container horizontal2">
 				<p>Little Simz</p>
+      </div>
 			</div>	
      </div> 
-				<div class="slider">
+				<div class="container horizontal">
 					<span>0:00</span>
 
 					<!-- <div class="range-container"> -->
@@ -138,7 +140,6 @@
 				<div class="left">
 					<svg height="32" role="img" width="32" viewBox="0 0 24 24" class="YetgE1VONGunFTGer0iQ play-small shadow"><polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"></polygon></svg>
 
-					<p class="number">2</p>
 
 					<img src="IMG_5414.JPG">
 
@@ -164,7 +165,6 @@
 				<div class="left">
 					<svg height="32" role="img" width="32" viewBox="0 0 24 24" class="YetgE1VONGunFTGer0iQ play-small shadow"><polygon points="21.57 12 5.98 3 5.98 21 21.57 12" fill="currentColor"></polygon></svg>
 
-					<p class="number">3</p>
 
 					<img src="elma.jpg">
 
@@ -393,6 +393,7 @@ main {
 
 .bottom .center .slider {
 	display: flex;
+  width:50px;
 	gap: 8px;
 	font-size: 11px;
 	color: linear-gradient(145deg, #21c65b, #1ca74d);
@@ -454,6 +455,12 @@ body > *:not(.bottom) {
       background: 
     "conic-gradient(from 180deg at 50% 50%, #3B7221 0deg, rgba(63, 104, 43, 0) 125.63deg, #3B7221 360deg)"
 }
+.container.horizontal2 {
+	flex-direction: row;
+  margin-left:100px;
+      background: 
+    "conic-gradient(from 180deg at 50% 50%, #3B7221 0deg, rgba(63, 104, 43, 0) 125.63deg, #3B7221 360deg)"
+}
 
 .shadow {
 	/* box-shadow: -5px -5px 20px #212121,  5px 5px 20px #141414; */
@@ -480,7 +487,9 @@ body > *:not(.bottom) {
 .shadow:active > * {
 	transform: scale(0.95);
 }
-
+slider{
+ margin-left: 100px;
+}
 .tab {
 	height: 40px;
 	width: 200px;
@@ -609,6 +618,7 @@ body > *:not(.bottom) {
 }
 
 .navigation-button {
+  margin-left:120px;
 	width: 32px;
 	height: 32px;
 	border-radius: 50%;
@@ -643,7 +653,7 @@ body > *:not(.bottom) {
 .account {
 	display: flex;
 	gap: 5px;
-	width: 170px;
+	width: 210px;
 	padding-right: 10px;
 	height: 32px;
 	align-items: center;
@@ -655,6 +665,7 @@ body > *:not(.bottom) {
 
 .account .profile-picture {
 	/* border: 1px solid rgba(255,255,255,.3); */
+  margin-left:5px;
 	width: 28px;
 	height: 28px;
 	border-radius: 50%;	
@@ -782,10 +793,12 @@ input[type="range"]::-webkit-slider-runnable-track {
 #myinput, #myinput2 {
   background: linear-gradient(to right, #b3b3b3 0%, #b3b3b3 50%, #535353 50%, #535353 100%);
 
-  /* border: solid 1px #82CFD0; */
+   border: solid 1px #82CFD0;
   border-radius: 8px;
   height: 4px;
-  width: 600px;
+  width: 300px;
+  margin-left:30px;
+  align-items:center;
   outline: none;
   transition: background 450ms ease-in;
   -webkit-appearance: none;
